@@ -57,7 +57,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="{{route('dash oard') }}">POSTECH</a>
+        <a class="navbar-brand" href="{{route('dashboard') }}">POSTECH</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,13 +75,16 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a class="nav-link" href="">User</a>
+                            <a class="nav-link" href="{{ route('users.index')}}">User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Master Ruangan</a>
+                            <a class="nav-link" href="">Master Barang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Booking Ruangan</a>
+                            <a class="nav-link" href="">Transaksi Penjualan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Transaksi Pembelian</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Logout</a>

@@ -18,11 +18,11 @@ class AuthController extends Controller
 {
     public function dashboard()
     {
-        if(Auth::check()){
+        //if(Auth::check()){
             return view('dashboard');
-        }
+        //}
 
-        return redirect("login")->withSuccess('Opps! You do not have access');
+        //return redirect("login")->withSuccess('Opps! You do not have access');
     }
 
     public function index(): View
