@@ -9,8 +9,8 @@
                 <div class="card-header">Tambah User</div>
                 <div class="card-body">
 
-                    <form action="" method="POST">
-                        @csrf
+                    <form action="{{route('users.store')}}" method="POST">
+                        @csrf   
                         <div class="form-group row mt-3">
                             <label for="name" class="col-md-4 col-form-label text-right">Name</label>
                             <div class="col-md-6">

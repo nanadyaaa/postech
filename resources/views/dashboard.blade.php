@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('dashboard') }}</div>
                 <div class="card-body">
-                    <h1>Hello, </h1>
+                <h1>Hello, {{ auth()->check() ? auth()->user()->name : '' }}</h1>
                     @if (session('success'))
                         <div class="alert alert-success" role="alert">
                             {{ session('success') }}
